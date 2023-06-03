@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Predict Consumption</title>
+    <style>
+        body {
+           background-image: url(https://media.rff.org/images/Electric_Power_-_150dpi.width-600.png);
+           background-size: cover;
+           text-align: center;
+           color: aliceblue;
+        }
+        form{
+            margin-top: 100px;
+            border: 2px,solid,black;
+            font-size:xx-large;
+            color: aliceblue;
+            
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Energy Prediction</h1>
+    <form action="/predict" method="POST">
+
+      <label>Date</label>
+      <input type="text", name="from_date", placeholder="yyyy-mm-dd"><br><br>
+
+      <label>No of days</label>
+      <input type="text", name="no_of_days"><br><br>
+
+
+      <input type="submit" value="Predict">
+    </form>
+  </body>
+</html>
